@@ -1,0 +1,21 @@
+{
+   "content_scripts": [ {
+      "js": [ "github_preview.js" ],
+      "matches": [ "http://github.com/*", "https://github.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Github HTML Preview provide a quick way to preview the html files in the tree browser",
+   "icons": {
+      "128": "github_128.png",
+      "16": "github_16.png",
+      "48": "github_48.png"
+   },
+   "manifest_version": 2,
+   "name": "Github HTML Preview",
+   "permissions": [ "https://github.com/*", "http://github.com/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0",
+   "web_accessible_resources": [
+      "frame.html"
+  ]
+}
